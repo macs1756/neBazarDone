@@ -4,10 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230403205026" />
-	<link rel="stylesheet" href="css/style.css?_v=20230403205026">
+	<meta name="viewport" content="width=device-width">
+	<title>Ne bazar Done</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap&_v=20230404122339" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230404122339" />
+	<link rel="stylesheet" href="css/style.css?_v=20230404122339">
 </head>
 
 <body>
@@ -91,7 +94,7 @@
 			
 			<div class="header__right d-flex a-i-center">
 
-				<button class="btn header__btn">Подать объявление</button>
+				<button class="btn header__btn modal-open">Подать объявление</button>
 
 				<a href="#" class="header__language d-flex a-i-center">
 					<img src="img/header__language.svg" alt="map">
@@ -480,7 +483,7 @@
 				<section class="blog">
 	<div class="content">
 		<h2>Блог</h2>
-		<div class="swiper blog__slider">
+		<div class=" blog__slider"> 
 								
 			<div class="swiper-wrapper">
 			  
@@ -677,7 +680,57 @@
 			
 
 <footer>
-	footer
+	<div class="content">
+
+		<div class="footer w100">
+
+			<section class="footer__section h100">
+					<a href="#" class="header__logo">ЛОГО</a>
+					<p class="footer__p">Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis </p>
+			</section>
+
+
+
+			<section class="footer__section footer__lists h100 d-flex a-i-start j-c-space">
+				<ul>
+					<li><h5>Product</h5></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+				</ul>
+
+				<ul>
+					<li><h5>Remaining</h5></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+				</ul>
+			</section>
+
+
+			<section class="footer__section footer__form-wr h100">
+
+
+				<h5>Newsletter</h5>
+
+				<div class="footer__form">
+					<input id="footer__input" type="text" placeholder="pat@shuffle.dev">
+					<button>Subscribe</button>
+				</div>
+
+
+			</section>
+		</div>
+
+		<div class="footer__bottom d-flex w100 j-c-center">
+			<p>© 2021 .. All rights reserved.</p>
+		</div>
+
+	</div>
 </footer>
 
 		</div>
@@ -687,11 +740,37 @@
 		<img src="img/message__fixed.svg" alt="message">
 	</a>
 
+	<div class="modal__wr">
+		<div class="modal__body">
+			
+			<img src="img/modal__close.svg" alt="close" class="modal__close">
+
+			<h6>Подать объявление</h6>
+
+			<div class="modal__net">
+				<a href="/ty" class="modal__net-item">
+					<img src="img/services__img-1.svg" alt="work ico">
+					<p>Работа</p>
+				</a>
+
+				<a href="#" class="modal__net-item">
+					<img src="img/services__img-2.svg" alt="dwelling ico">
+					<p>Жилье</p>
+				</a>
+
+				<a href="#" class="modal__net-item">
+					<img src="img/services__img-3.svg" alt="business ico">
+					<p>Бизнес</p>
+				</a>
+
+			</div>
+		</div>
+	</div>
 
 
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230403205026"></script>
-	<script type="module" src="js/app.js?_v=20230403205026"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230404122339"></script>
+	<script type="module" src="js/app.js?_v=20230404122339"></script>
 </body>
 
 </html>

@@ -172,6 +172,7 @@ BURGER_AKARDEON.forEach((el)=>{
 		breakpoints: {
 			0: {
 				slidesPerView: 1,
+				spaceBetween: 20,
 			},
 			700:{
 				spaceBetween: 20,
@@ -181,7 +182,34 @@ BURGER_AKARDEON.forEach((el)=>{
 				spaceBetween: 40,
 				slidesPerView: 2,
 			}
-		}
+		}	
+	 });
+
+
+	 const MODAL_BUTTON_OPEN = document.querySelectorAll('.modal-open');
+	 const MODAL = document.querySelector('.modal__wr');
+	 const MODAL_BUTTON_CLOSE = document.querySelector('.modal__close');
+	 const MODAL_BODY = document.querySelector('.modal__body');
+
+	 MODAL_BUTTON_OPEN.forEach((btn)=>{
+
+		btn.addEventListener('click', ()=>{
+			MODAL.classList.add('active');
+			
+		});
+	 });
 	 
-		
+	 const ARR_ClOSE_MODAL = [MODAL_BUTTON_CLOSE, MODAL];
+
+	 ARR_ClOSE_MODAL.forEach((el)=>{
+		el.addEventListener('click', ()=>{
+			MODAL.classList.remove('active');
+		 });
+	 });
+
+	
+	 MODAL_BODY.addEventListener('click', function(e){
+			if(!e.target.classList.contains('modal__net-item')){
+				e.stopPropagation();
+			}
 	 });
