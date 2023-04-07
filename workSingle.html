@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap&_v=20230407201227"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230407201227" />
+	<link rel="stylesheet" href="css/style.css?_v=20230407201227">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="workSingle">
+
+			<header class="header">
+
+				<div class="content ">
+
+
+					<div class="header__bg"></div>
+
+					<nav class="header__nav d-flex a-i-center j-c-space w100">
+
+
+						<div class="header__left d-flex a-i-center">
+
+							<a href="#" class="header__logo">ЛОГО</a>
+
+							<ul class="header__list-desc d-flex a-i-center">
+								<li class="header__link-item link-hover"><a href="#">Главная</a></li>
+
+								<li class="header__link-item link-hover"><a href="#">Каталог бизнесов</a></li>
+
+								<li class="header__link-item ">
+
+
+									<div class="d-flex a-i-center header__link-drop-down">
+										<span>Работа</span>
+										<img src="img/header__arrow.svg" alt="arrow">
+
+										<div class="header__drop-down-body">
+
+											<p class="header__drop-down-space"></p>
+
+
+											<ul class="header__drop-down-wr">
+												<li><a href="#">itemthrhtrh</a></li>
+												<li><a href="#">item</a></li>
+												<li><a href="#">item</a></li>
+												<li><a href="#">item</a></li>
+											</ul>
+
+
+
+										</div>
+								</li>
+
+								<li class="header__link-item ">
+
+									<div class="d-flex a-i-center header__link-drop-down">
+
+										<span>Жилье</span>
+										<img src="img/header__arrow.svg" alt="arrow">
+
+										<div class="header__drop-down-body">
+
+											<p class="header__drop-down-space"></p>
+
+
+											<ul class="header__drop-down-wr">
+												<li><a href="#">item</a></li>
+												<li><a href="#">item</a></li>
+												<li><a href="#">item</a></li>
+												<li><a href="#">item</a></li>
+											</ul>
+
+											<div>
+											</div>
+
+										</div>
+								</li>
+
+
+							</ul>
+						</div>
+
+						<div class="header__right d-flex a-i-center">
+
+							<div class="header__search ">
+								<input type="text" placeholder="Поиск">
+								<button>
+									<img src="img/header__search.svg" alt="search">
+								</button>
+							</div>
+
+							<button class="btn header__btn modal-open">Подать объявление</button>
+
+							<a href="#" class="header__language d-flex a-i-center">
+								<img src="img/header__language.svg" alt="map">
+								<p>ua</p>
+							</a>
+
+							<div class="header__burger"><span></span></div>
+						</div>
+
+
+
+
+					</nav>
+
+					<div class="burger__open">
+						<div class="content w100">
+							<ul class="burger__list">
+
+								<li class="burger__list-item"><a href="#">Главная</a></li>
+								<li class="burger__list-item"><a href="#">Каталог бизнесов</a></li>
+
+								<li class="burger__list-item burger__list-opened">
+									<div class="d-flex a-i-center j-c-space">
+										<p>Работа</p>
+										<img src="img/header__arrow.svg" alt="arrow">
+									</div>
+									<ul class="burger__list-body">
+										<li><a href="#">item</a></li>
+										<li><a href="#">item</a></li>
+										<li><a href="#">item</a></li>
+									</ul>
+								</li>
+
+								<li class="burger__list-item burger__list-opened">
+									<div class="d-flex a-i-center j-c-space">
+										<p>Жилье</p>
+										<img src="img/header__arrow.svg" alt="arrow">
+
+
+									</div>
+									<ul class="burger__list-body">
+										<li><a href="#">item</a></li>
+										<li><a href="#">item</a></li>
+										<li><a href="#">item</a></li>
+									</ul>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+
+			</header>
+
+			<main class="content">
+
+				<div class="work__bread-crumbs d-flex a-i-center">
+					<a href="/">Главная</a>
+					<img src="img/bread-crumbs__arrow.svg" alt="arrow">
+					<p>Заголовок</p>
+				</div>
+
+				<h4 class="work-single__title">Заголовок</h4>
+				
+				<div class="work-single__body">
+
+					<div class="work-single__body-title d-flex j-c-space">
+						<h5>Работа в компании доставки еды БЕЗ документов. Средний заработок $200-250 в день!</h5>
+						<p> $200-250</p>
+					</div>
+
+					<div class="work-single__location d-flex a-i-start">
+						<img src="img/initial__map.svg" alt="location icon">
+						<p>Los Angeles, CA | Sacramento, CA | Miami, FL | и 10 других</p>
+					</div>
+					
+					<div class="work-single__contact d-flex a-i-center">
+
+						<button class="work-single__contact-tell">
+							<span>Показать номер</span>
+							<p>+380957954255</p>
+						</button>
+
+						<div class="d-flex">
+							<a href="#" class="work-single__contact-tg">
+								<img src="img/work-single__telegram.svg" alt="telegram icon">
+							</a><a href="#" class="work-single__contact-fc">
+								<img src="img/work-single__instagram.svg" alt="instagram icon">
+							</a>
+						</div>
+					
+
+
+					</div>
+
+					<p class="work-single__description">
+						✅ Gopuff - Покупка аккаунта - $600 (временная цена). Аккаунт навсегда ваш. <br>
+						
+						🚀 Новый перспективный сервис доставки!<br>
+						
+						📍Есть опция рассрочки на 2 платежа: $300 сразу ПОСЛЕ выдачи и в течении недели $350.<br>
+						
+						✅ Doordash - Покупка аккаунта - $600. Аккаунт навсегда Ваш.<br>
+						
+						📍Есть опция рассрочки на 2 платежа: $300 сразу ПОСЛЕ выдачи и в течении недели $350.<br>
+						
+						✅ Uber Eats - Покупка аккаунта - $690. Аккаунт навсегда Ваш.<br>
+						
+						✅ Первый платеж $90. Как гарантия того, что вы не откажитесь от аккаунта после его готовности.<br>
+
+						2️⃣Второй платеж $600 ПОСЛЕ выдачи и проверки аккаунта.<br>
+						
+						
+						📍Есть опция рассрочки второго платежа: $350 сразу ПОСЛЕ выдачи и в течении недели ещё $300.<br>
+						
+						🔒Гарантия 3 месяца. На практике срок действия аккаунтов больше года.<br>
+						
+						‼️P.S.
+						💳 Есть возможность заказа дебет карты для вывода заработанных средств через банкоматы.<br>
+						
+						📲Связь в</p>
+
+						<div class="work-single__bottom d-flex a-i-center j-c-space">
+
+							<div class="work-single__filters d-flex a-i-start">
+								<p>Водители</p>
+								<p>Экспедиторы</p>
+								<p>Другие специальности</p>
+							</div>
+
+							<div class="work-single__date">Опубликовано: 04.03.2023</div>
+						</div>
+						
+
+
+				</div>
+
+				<h4 class="work-single__title">Похожие объявления</h4>
+
+				<div class="work-single__slider">
+
+
+					
+
+					<div class="work-single__swiper">
+						
+						<div class="swiper-wrapper">
+			
+						  <div class="swiper-slide">
+							<div class="work-single__slide">
+								<h6>Здесь будет заголовок </h6>
+								<p>Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quisLorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis um qum </p>
+								
+								<div class="work-single__slide-more d-flex a-i-center j-c-space">
+									<span class="work-single__slide-date">Дата</span>
+									<span class="work-single__slide-price">$300</span>
+								</div>
+		
+		
+							</div>
+						  </div>
+						  <div class="swiper-slide">
+							<div class="work-single__slide">
+								<h6>Здесь будет заголовок </h6>
+								<p>Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quisLorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis um qum </p>
+								
+								<div class="work-single__slide-more d-flex a-i-center j-c-space">
+									<span class="work-single__slide-date">Дата</span>
+									<span class="work-single__slide-price">$300</span>
+								</div>
+		
+		
+							</div>
+						  </div>
+						  <div class="swiper-slide">
+							<div class="work-single__slide">
+								<h6>Здесь будет заголовок </h6>
+								<p>Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quisLorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis um qum </p>
+								
+								<div class="work-single__slide-more d-flex a-i-center j-c-space">
+									<span class="work-single__slide-date">Дата</span>
+									<span class="work-single__slide-price">$300</span>
+								</div>
+		
+		
+							</div>
+						  </div>
+						  <div class="swiper-slide">
+							<div class="work-single__slide">
+								<h6>Здесь будет заголовок </h6>
+								<p>Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quisLorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis um qum </p>
+								
+								<div class="work-single__slide-more d-flex a-i-center j-c-space">
+									<span class="work-single__slide-date">Дата</span>
+									<span class="work-single__slide-price">$300</span>
+								</div>
+		
+		
+							</div>
+						  </div>
+						  <div class="swiper-slide">
+							<div class="work-single__slide">
+								<h6>Здесь будет заголовок </h6>
+								<p>Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quisLorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis um qum </p>
+								
+								<div class="work-single__slide-more d-flex a-i-center j-c-space">
+									<span class="work-single__slide-date">Дата</span>
+									<span class="work-single__slide-price">$300</span>
+								</div>
+		
+		
+							</div>
+						  </div>
+						
+						
+						</div>
+				</div>
+				
+				<div class="d-flex a-i-center j-c-center w100 slider__navigation">
+					<div class="blog__navigation-prev">
+						<img src="img/swiper__arrow.svg" alt="arrow" class="">
+					</div>
+					<div class="blog__navigation-pagination"></div>
+		
+					<div class="blog__navigation-next">
+						<img src="img/swiper__arrow.svg" alt="arrow" class="">
+					</div>
+		
+				</div>
+
+			</main>
+
+			
+
+<footer>
+	<div class="content">
+
+		<div class="footer w100">
+
+			<section class="footer__section h100">
+					<a href="#" class="header__logo">ЛОГО</a>
+					<p class="footer__p">Lorem ipsum dolor sit amet consectetur. Risus nibh suspendisse quis laoreet nulla cursus amet facilisi ultrices. Dictum quis </p>
+			</section>
+
+
+
+			<section class="footer__section footer__lists h100 d-flex a-i-start j-c-space">
+				<ul>
+					<li><h5>Product</h5></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+				</ul>
+
+				<ul>
+					<li><h5>Remaining</h5></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Features</a></li>
+				</ul>
+			</section>
+
+
+			<section class="footer__section footer__form-wr h100">
+
+
+				<h5>Newsletter</h5>
+
+				<div class="footer__form">
+					<input id="footer__input" type="text" placeholder="pat@shuffle.dev">
+					<button>Subscribe</button>
+				</div>
+
+
+			</section>
+		</div>
+
+		<div class="footer__bottom d-flex w100 j-c-center">
+			<p>© 2021 .. All rights reserved.</p>
+		</div>
+
+	</div>
+</footer>
+
+		</div>
+	</div>
+
+	<div class="modal__wr">
+		<div class="modal__body">
+
+			<img src="img/modal__close.svg" alt="close" class="modal__close">
+
+			<h6>Подать объявление</h6>
+
+			<div class="modal__net">
+				<a href="/ty" class="modal__net-item">
+					<img src="img/services__img-1.svg" alt="work ico">
+					<p>Работа</p>
+				</a>
+
+				<a href="#" class="modal__net-item">
+					<img src="img/services__img-2.svg" alt="dwelling ico">
+					<p>Жилье</p>
+				</a>
+
+				<a href="#" class="modal__net-item">
+					<img src="img/services__img-3.svg" alt="business ico">
+					<p>Бизнес</p>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/header.js?_v=20230407201227"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230407201227"></script>	
+	<script src="js/workSingle.js?_v=20230407201227"></script>
+</body>
+
+</html>
