@@ -129,12 +129,16 @@ let progress = document.querySelector('.progress');
 let graphActivePart = document.querySelector('.price__graph-bg');
 let graphActivePart2 = document.querySelector('.price__graph-bg2');
 
+
+if(document.querySelector('.range-min')){
+
+
 document.querySelector('.range-min').addEventListener('input', ()=>{
 
   if(100 - parseInt(progress.style.left) - 1.61 > 98){
     graphActivePart.style.right = '100%';
   }else{
-    graphActivePart.style.right = 100 - parseInt(progress.style.left) - 1.61 +'%';
+    graphActivePart.style.right = 100 - parseInt(progress.style.left) - 1.51 +'%';
   }
 
 });
@@ -146,7 +150,7 @@ document.querySelector('.range-max').addEventListener('input', ()=>{
   if(100 - parseInt(progress.style.right) - 1.61 > 98){
     graphActivePart2.style.left = '100%';
   }else{
-    graphActivePart2.style.left = 100 - parseInt(progress.style.right) - 1.61 +'%';
+    graphActivePart2.style.left = 100 - parseInt(progress.style.right) - 1.51 +'%';
   }
 });
 
@@ -180,3 +184,14 @@ FILTERS_BODY_MODAL.addEventListener('click', function(e){
     e.stopPropagation();
 });
 
+}
+
+
+if(document.querySelector('.form')){
+
+  //code for page form
+
+  
+
+
+}

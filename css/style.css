@@ -1309,6 +1309,7 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 5px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
   pointer-events: auto;
   -webkit-appearance: none;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -1352,6 +1353,10 @@ input[type=range]::-moz-range-thumb {
   padding-bottom: 32px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.filters__body label {
+  cursor: pointer;
 }
 
 .filters__body h5 {
@@ -1707,6 +1712,78 @@ input[type=range]::-moz-range-thumb {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.form main {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.form main input {
+  background: #FFFFFC;
+  border-radius: 10px;
+  height: 60px;
+  padding: 16px 20px;
+  font-weight: 500;
+  line-height: 120%;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border: 1px solid transparent;
+}
+
+.form main input::-webkit-input-placeholder {
+  opacity: 0.65;
+}
+
+.form main input::-moz-placeholder {
+  opacity: 0.65;
+}
+
+.form main input:-ms-input-placeholder {
+  opacity: 0.65;
+}
+
+.form main input::-ms-input-placeholder {
+  opacity: 0.65;
+}
+
+.form main input::placeholder {
+  opacity: 0.65;
+}
+
+.form label {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000000;
+  line-height: 120%;
+  display: block;
+}
+
+.form label span {
+  color: #CC0D0D;
+}
+
+.form section {
+  margin-bottom: 45px;
+  gap: 40px;
+}
+
+.form h4 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 60px;
+}
+
+.form__type {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 footer {
@@ -2084,11 +2161,11 @@ footer a {
   }
 
   input[type=range]::-webkit-slider-thumb {
-    width: calc(16px + 24 * ((100vw - 320px) / 1260));
+    width: calc(24px + 16 * ((100vw - 320px) / 1260));
   }
 
   input[type=range]::-webkit-slider-thumb {
-    height: calc(16px + 24 * ((100vw - 320px) / 1260));
+    height: calc(24px + 16 * ((100vw - 320px) / 1260));
   }
 
   input[type=range]::-moz-range-thumb {
@@ -2215,6 +2292,34 @@ footer a {
 
   .filters__possibility h4 {
     margin-bottom: calc(15px + 25 * ((100vw - 320px) / 1260));
+  }
+
+  .form main {
+    padding-bottom: calc(40px + 110 * ((100vw - 320px) / 1260));
+  }
+
+  .form label {
+    margin-bottom: calc(8px + 12 * ((100vw - 320px) / 1260));
+  }
+
+  .form label {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1260));
+  }
+
+  .form section {
+    margin-bottom: calc(20px + 25 * ((100vw - 320px) / 1260));
+  }
+
+  .form section {
+    gap: calc(20px + 20 * ((100vw - 320px) / 1260));
+  }
+
+  .form h4 {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 1260));
+  }
+
+  .form h4 {
+    margin-bottom: calc(24px + 36 * ((100vw - 320px) / 1260));
   }
 
   .footer {
@@ -2512,6 +2617,11 @@ footer a {
     padding-right: 5%;
   }
 
+  .form__type {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .footer__lists {
     padding-left: 5%;
     padding-right: 5%;
@@ -2607,6 +2717,10 @@ footer a {
 
   .filters__count-net button {
     padding: 14px 28px;
+  }
+
+  .form main input {
+    height: 53px;
   }
 
   footer h5 {
