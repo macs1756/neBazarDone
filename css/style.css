@@ -1955,7 +1955,8 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 40px;
 }
 
-.work-single__contact *:not(:last-child) {
+.work-single__contact button:not(:last-child),
+.work-single__contact a:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -3191,7 +3192,8 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .work-single__contact *:not(:last-child) {
+  .work-single__contact button:not(:last-child),
+  .work-single__contact a:not(:last-child) {
     margin-right: 15px;
   }
 
