@@ -9,9 +9,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap&_v=20230407113520"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap&_v=20230407181524"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20230407113520">
+	<link rel="stylesheet" href="css/style.css?_v=20230407181524">
 </head>
 
 <body>
@@ -176,7 +176,7 @@
 						<div class="work__current-category">
 	
 							<div class="current-category__label w100 d-flex a-i-center j-c-space work-drop">
-								<p>Все вакансии</p>
+								<p id="current-vacancy">Все вакансии</p>
 								<img class="drop-down__arrow" src="img/swiper__arrow.svg" alt="arrow">
 							</div>
 	
@@ -199,7 +199,7 @@
 	<div class="work__current-city">
 
 		<div class="current-city__label d-flex a-i-center j-c-space work-drop">
-			<p>Все города сша</p>
+			<p id="current-location">Все города сша</p>
 			<img class="drop-down__arrow" src="img/swiper__arrow.svg" alt="arrow">
 		</div>
 
@@ -223,12 +223,12 @@
 				<section class="form__title">
 
 					<div>
-						
+
 					<label for="p-title">
 						Заголовок <span>*</span>
 					</label>
 	
-					<input id="p-title" type="text" placeholder="Работа в компании доставки еды...">
+					<input class="validation-3" id="p-title" type="text" placeholder="Работа в компании доставки еды...">
 
 					</div>
 					
@@ -236,6 +236,239 @@
 				</section>
 
 
+				<section class="form__description">
+						<div>
+							<label for="p-description">Описание <span>*</span></label>
+
+							<textarea class="w100 validation-3" id="p-description" placeholder="Gopuff - Покупка аккаунта - $600 (временная цена). Аккаунт навсегда ваш. "></textarea>
+						</div>
+				</section>
+
+				<section class="form__information">
+
+
+					<div>
+
+						<label for="p-name">Имя <span>*</span></label>
+						<input class="validation-3"  id="p-name" type="text" placeholder="Иванов Иван Иванович">
+
+					</div>
+
+
+					<div>
+
+						<label for="p-email">E-mail <span>*</span></label>
+
+						<input id="p-email" type="text" placeholder="name@gmail.com">
+						
+					</div>
+
+				</section>
+
+				<section class="form__contact">
+
+					<div>
+						<label for="p-tell">Телефон <span>*</span></label>
+						<input id="p-tell" type="text" placeholder="+1 (---) --- ----">
+					</div>
+
+					<div class="d-flex form__social-networks">
+
+						<div class="form__social-networks-tg">
+							<label for="p-tg">Телеграм <span>*</span></label>
+							<input class="validation-3"  id="p-tg" type="text" placeholder="@name">
+						</div>
+
+						<div class="form__social-networks-fc">
+							<label for="p-fc">Facebook <span>*</span></label>
+							<input class="validation-3"  id="p-fc" type="text" placeholder="ссылка">
+						</div>
+
+
+					</div>
+
+				</section>
+
+				<section class="form__file">
+
+					<div class="form__file-wr">
+						<input id="p-file" type="file">
+
+						<div class="cen">
+							<img src="img/form__load-file.svg" alt="load ico">
+							<h6>Нажмите на эту область для загрузки фото</h6>
+							<p>Максимальный размер 2mb.</p>
+							<span id="file-name" ></span>
+						</div>
+						
+
+					</div>
+						
+				</section>
+
+				<section class="form__adress">
+					<label for="p-adress">Адрес <span>*</span></label>
+					<input class="validation-3" id="p-adress" type="text" placeholder="штат Калифорния, улица Уличная 9">
+				</section>
+
+				<section class="form__name-company">
+					<label for="p-company">Имя компании <span>*</span></label>
+					<input class="validation-3" id="p-company" type="text" placeholder="ТОВ “JPMorgan Chase”">
+				</section>
+
+				<section class="form__more">
+
+					<div>
+						<label for="p-company">Зарплата <span>*</span></label>
+					<input class="validation-3" id="p-company" type="text" placeholder="$200-250">
+					</div>
+
+					<div>
+						<label for="p-company">Период <span>*</span></label>
+						<div class="work__current-city">
+
+							<div class="current-city__label d-flex a-i-center j-c-space work-drop">
+								<p id="current-period">Период</p>
+								<img class="drop-down__arrow" src="img/swiper__arrow.svg" alt="arrow">
+							</div>
+					
+							<ul class="current-city__body">
+								<li>вибрана назва з1</li>
+								<li>вибрана назва2</li>
+								<li>вибрана назвах3</li>
+								<li>вибрана назва4</li>
+								<li>вибрана назва5</li>
+								<li>вибрана назва6</li>
+								<li>вибрана назва7</li>
+							</ul>
+					
+						</div>
+					</div>
+
+				</section>
+
+				<div class="filters__type-net form__checkbox">
+					
+					<div class="filters__type-item">				
+						<input id="p-box1" class="checkbox-custom" type="checkbox">
+						<label for="p-box1" class="checkbox-custom-label"></label>
+						<p>фильтр 1</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box2" class="checkbox-custom" type="checkbox">
+						<label for="p-box2" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box3" class="checkbox-custom" type="checkbox">
+						<label for="p-box3" class="checkbox-custom-label"></label>
+						<p>фильтр 3</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box4" class="checkbox-custom" type="checkbox">
+						<label for="p-box4" class="checkbox-custom-label"></label>
+						<p>фильтр 4</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box5" class="checkbox-custom" type="checkbox">
+						<label for="p-box5" class="checkbox-custom-label"></label>
+						<p>фильтр 5</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box6" class="checkbox-custom" type="checkbox">
+						<label for="p-box6" class="checkbox-custom-label"></label>
+						<p>фильтр 6</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box7" class="checkbox-custom" type="checkbox">
+						<label for="p-box7" class="checkbox-custom-label"></label>
+						<p>фильтр 7</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box8" class="checkbox-custom" type="checkbox">
+						<label for="p-box8" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box9" class="checkbox-custom" type="checkbox">
+						<label for="p-box9" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box10" class="checkbox-custom" type="checkbox">
+						<label for="p-box10" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box11" class="checkbox-custom" type="checkbox">
+						<label for="p-box11" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box12" class="checkbox-custom" type="checkbox">
+						<label for="p-box12" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box13" class="checkbox-custom" type="checkbox">
+						<label for="p-box13" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box14" class="checkbox-custom" type="checkbox">
+						<label for="p-box14" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+
+					<div class="filters__type-item">				
+						<input id="p-box15" class="checkbox-custom" type="checkbox">
+						<label for="p-box15" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+					<div class="filters__type-item">				
+						<input id="p-box16" class="checkbox-custom" type="checkbox">
+						<label for="p-box16" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+					<div class="filters__type-item">				
+						<input id="p-box17" class="checkbox-custom" type="checkbox">
+						<label for="p-box17" class="checkbox-custom-label"></label>
+						<p>фильтр 2</p>
+					</div>
+
+				</div>
+
+
+				<button id="send-form">Button</button>
 
 			</main>
 
@@ -327,8 +560,8 @@
 
 
 
-	<script src="js/header.js?_v=20230407113520"></script>
-	<script src="js/work.js?_v=20230407113520"></script>
+	<script src="js/header.js?_v=20230407181524"></script>
+	<script src="js/work.js?_v=20230407181524"></script>
 </body>
 
 </html>
